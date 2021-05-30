@@ -8,16 +8,7 @@ spring:
       - id: order-service
         predicates:
         - Path=/order/**
-        filters:
-        - StripPrefix=false
-      - id: query-service
-        predicates:
-        - Path=/query/**
-        filters:
-        - StripPrefix=false
-      - id: axon-webui
-        predicates:
-        - Path=/ui/**
+        uri: localhost:8091
         filters:
         - StripPrefix=false
 
