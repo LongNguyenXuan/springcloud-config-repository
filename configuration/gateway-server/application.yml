@@ -8,7 +8,7 @@ spring:
       - id: order-service
         predicates:
         - Path=/order/**
-        uri: localhost:8091
+        uri: lb://ORDER-SERVICE
         filters:
         - StripPrefix=0
 
