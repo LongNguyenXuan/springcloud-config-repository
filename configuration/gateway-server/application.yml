@@ -17,3 +17,7 @@ eureka:
 #     fetchRegistry:true
     service-url:
       defaultZone: http://localhost:8761/eureka/
+    fetchRegistry: true
+
+# disable timeout setting
+hystrix.command.default.execution.timeout.enabled=false
