@@ -10,7 +10,7 @@ spring:
         - Path=/order/**
         uri: localhost:8091
         filters:
-        - StripPrefix=false
+        - StripPrefix=0
 
 eureka:
   client:
