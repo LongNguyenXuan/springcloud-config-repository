@@ -5,9 +5,9 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: axon-customer
+      - id: axon-order
         predicates:
-        - Path=/customer/**
+        - Path=/order/**
         filters:
         - StripPrefix=false
       - id: axon-query
