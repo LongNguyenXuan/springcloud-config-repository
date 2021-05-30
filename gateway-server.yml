@@ -21,8 +21,3 @@ spring:
         filters:
         - StripPrefix=false
 
-eureka:
-  client:
-    fetchRegistry:true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
