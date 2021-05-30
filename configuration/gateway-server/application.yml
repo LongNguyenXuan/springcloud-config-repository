@@ -14,10 +14,15 @@ spring:
 
 eureka:
   client:
-#     fetchRegistry:true
+    fetch-registry: true
+    register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
-    fetchRegistry: true
 
 # disable timeout setting
-hystrix.command.default.execution.timeout.enabled=false
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
